@@ -1,0 +1,38 @@
+body{
+    background-image: url("fdbv.jpg");
+    background-repeat: repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#titre{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; 
+    text-shadow: 1px 1px 2px rgb(17, 0, 255); 
+}
+
+#info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; 
+    text-shadow: 1px 1px 2px rgb(17, 0, 255); 
+}
+
+
+#valeur{
+    background: linear-gradient(rgb(17, 0, 255), rgb(111, 0, 255));
+    color: white;
+    width: 180px;
+    height: 50px;
+    border-color: white;
+    border-style: dotted;
+}
+
+
+#bouton{
+    background: linear-gradient(rgb(111, 0, 255), rgb(223, 206, 209));
+    border-radius: 20% 20%;
+    width: 150px;
+    height: 50px;
+    border-color: white;
+    border-style: dotted;
+}

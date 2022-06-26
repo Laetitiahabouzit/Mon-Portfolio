@@ -1,0 +1,303 @@
+body{
+  margin: 0;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #94bfda;
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+p{text-indent:2em;}
+
+div {
+  display: block;
+}
+
+@font-face{
+  font-family: "Pixellari";
+  src: url('Pixellari.ttf')
+}
+
+.txthdr{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  text-shadow: 2px 2px 3px black;
+}
+
+#fondecran {
+  /* Fixe l'image en haut à gauche de la page */
+  top: 0; 
+  left: 0; 
+  /* Préserve le ratio de l'image */
+  min-width: 100%;
+  min-height: 100%;
+  border-bottom: thick dashed white;
+ }
+
+strong{
+  color: rgb(0, 0, 0);
+}
+
+u{
+  color:#1e045a;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+/*-----------Dans le header--------------*/
+.header {
+  position:fixed;
+  background-color: #94bfda;
+  border-bottom: medium solid white;
+  height:70px;
+  z-index: 1000;
+  top:0;
+  left:0;
+  right:0;
+}
+
+.lglink{
+  margin-left: auto;
+  display: block;
+}
+
+
+/*----------Debut barre navigation--------------*/
+ul {
+  padding:0;
+  margin:0;
+  list-style-type:none;
+  }
+ li {
+  margin-left:2px;
+  float:left;
+  }
+ ul li a {
+  display:block;
+  float:left;   
+  width:180px;
+  color:black;
+  text-decoration:none;
+  text-align:center;
+  padding:5px;
+  border:2px solid;
+
+  }
+ ul li a:hover {
+  color: #201655;
+  }
+/*-----------Fin barre de navigation--------------*/
+
+/*-----------Fin du header--------------*/
+
+.content {
+  padding:100px 0 50px 0;
+}
+
+.bigtitle{
+  color:white;
+  position:absolute;
+  top:200px; 
+  width:100%; 
+  height:400px; 
+  z-index:2;
+  font-size:80px;
+}
+
+.deroule{
+  overflow:hidden;
+  height:0px;
+  transition: height 0.5s ease-in-out;
+}
+
+.title{
+color: rgb(55, 9, 139);
+font-size: medium;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#morpion{
+  width: 100%;
+  height: "auto";
+}
+
+
+/*-------Début css carousel-----------------*/
+.slider-container {
+  max-width: 300px;
+  position: relative;
+  left: 250px;
+  top: -600px;
+  margin: auto;
+  height: 350px;
+  overflow: hidden;
+}
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+  background: #1c87c9;
+}
+.slide-input{
+  opacity: 0;
+}
+.slide-img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 0;
+  transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+  left: 0;
+  z-index: 0;
+  transition: left 0.65s ease-out;
+}
+/*-------Fin css carousel-----------------*/
+
+#divballe{ 
+  width: 100%;
+  height: "auto";
+}
+
+#divmyst{
+  width: 100%;
+  height: "auto";
+}
+
+.divballeimg{
+  position: relative;
+  left: 850px;
+  top: -370px;
+}
+
+.divmystimg{
+  position: relative;
+  left: 850px;
+  top: -460px;
+}
+
+.divcharimg{
+  position: relative;
+  left: 850px;
+  top: -380px;
+}
+
+.footer {
+  height:50px;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
+#navigation {
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+}
+
+.section {
+  padding: 100px 0;
+  padding-top: 100px;
+  padding-right: 0px;
+  padding-bottom: 100px;
+  padding-left: 0px;
+}
+
+
+
+
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label{margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;}
+
+input[type=submit] {
+  background-color: #1255a2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1872D9;
+}
+
+.container {
+  /* Ajouter box-sizing */
+  box-sizing : border-box;
+  border-radius:5px;
+  background-color:#f2f2f2;
+  padding:20px;
+  width: 100%;
+  /* redéfinition 400 + 2*20 */
+  max-width: 440px;
+  margin:0 auto;
+}
+h1  {
+  color: #02008d;
+  width: 100%;
+}
